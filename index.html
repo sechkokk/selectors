@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаба № 4</title>
+    <style>
+               * {
+            font-family: Arial, sans-serif;
+        }
+
+                p.univ-text, body > p:first-of-type {
+            color: red;
+        }
+
+        ul li:nth-child(1) { color: green; }
+        ul li:nth-child(2) { color: blue; }
+        ul li:nth-child(3) { color: yellow; }
+
+        #first-post h2, #first-post p {
+            color: orange;
+        }
+
+        #second-post h2, #second-post p {
+            color: purple;
+        }
+
+                .pink-text {
+            color: pink;
+        }
+
+        .color-list-block ul li:nth-child(1) { color: gray; }
+        .color-list-block ul li:nth-child(2) { color: brown; }
+        .color-list-block ul li:nth-child(3) { color: black; }
+
+                .sibling-block h2 + p {
+            color: maroon;
+        }
+        .sibling-block h2 {
+            color: maroon;
+        }
+
+               input[placeholder="Черный"] {
+            color: black;
+            border: 1px solid black;
+        }
+
+        #first-post h2::before {
+            content: "✿";
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+<p class="univ-text">Красный</p>
+ 
+<ul>
+    <li>Зеленый</li>
+    <li>Синий</li>
+    <li>Желтый</li>
+</ul>
+ 
+<div id="first-post" class="post">
+    <h2>Пост 1: Оранжевый</h2>
+    <p>Этот блок текста должен стать оранжевым.</p>
+</div>
+
+<div id="second-post" class="post">
+    <h2>Пост 2: Фиолетовый</h2>
+    <p>Этот блок текста должен стать фиолетовым.</p>
+</div>
+ 
+<div class="color-list-block">
+    <p class="pink-text">Розовый</p>
+    <ul>
+        <li>Цвет: Серый</li>
+        <li>Цвет: Коричневый</li>
+        <li>Цвет: Черный</li>
+    </ul>
+</div>
+ 
+<div class="sibling-block">
+    <h2>Бордовый</h2>
+    <p>Этот текст должен стать бордовым.</p>
+</div>
+ 
+<div class="form-block">
+    <label>Введите имя: </label>
+    <input type="text" placeholder="Черный">
+</div>
+
+</body>
+</html>
